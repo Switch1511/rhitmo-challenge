@@ -4,7 +4,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CoreModule } from './core/core.module';
+import { BaseModule } from './core/view/base/base.module';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonToggleModule,
-    CoreModule
+    BaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

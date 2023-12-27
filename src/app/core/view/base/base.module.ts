@@ -10,6 +10,8 @@ import { BaseComponent } from './base.component';
   imports: [
     CommonModule
   ],
-  exports: []
+  exports: [
+    BaseComponent
+  ]
 })
 export class BaseModule { }
