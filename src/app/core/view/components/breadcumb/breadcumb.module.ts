@@ -10,6 +10,9 @@ import { BreadcumbComponent } from './breadcumb.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    BreadcumbComponent
   ]
 })
 export class BreadcumbModule { }

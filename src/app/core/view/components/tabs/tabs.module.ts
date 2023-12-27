@@ -10,6 +10,9 @@ import { TabsComponent } from './tabs.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    TabsComponent
   ]
 })
 export class TabsModule { }
