@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BaseComponent } from './base.component';
+import { SidebarComponent } from './sidebar.component';
+
 
 
 @NgModule({
   declarations: [
-    BaseComponent
+    SidebarComponent
   ],
   imports: [
     CommonModule
-  ],
-  exports: [
-    BaseComponent
   ]
 })
-export class BaseModule { }
+export class SidebarModule { }

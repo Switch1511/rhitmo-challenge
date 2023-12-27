@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BaseComponent } from './base.component';
+import { TabsComponent } from './tabs.component';
+
 
 
 @NgModule({
   declarations: [
-    BaseComponent
+    TabsComponent
   ],
   imports: [
     CommonModule
-  ],
-  exports: [
-    BaseComponent
   ]
 })
-export class BaseModule { }
+export class TabsModule { }

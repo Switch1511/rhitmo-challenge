@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BaseComponent } from './base.component';
+import { BreadcumbComponent } from './breadcumb.component';
+
 
 
 @NgModule({
   declarations: [
-    BaseComponent
+    BreadcumbComponent
   ],
   imports: [
     CommonModule
-  ],
-  exports: [
-    BaseComponent
   ]
 })
-export class BaseModule { }
+export class BreadcumbModule { }
