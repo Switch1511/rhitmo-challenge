@@ -28,7 +28,6 @@ export class UnityCardsComponent implements OnInit {
     this.getCards();
 
     this.modalSubscription = this.createModalService.isModalOpen().subscribe((status: boolean) => {
-      console.log(status)
       if(!status){
         this.getCards();
       }

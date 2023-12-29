@@ -53,7 +53,6 @@ export class DialogCreateUnityComponent implements OnInit {
   }
 
   getForm(data: any){
-    console.log(data)
     this.form.setValue({
       name: data.name,
       cep: data.postalCode,
@@ -82,7 +81,6 @@ export class DialogCreateUnityComponent implements OnInit {
     };
 
     if (this.editId) {
-      console.log(registerPayload, this.data.cardId)
       this.tenanciesService.putAdress(registerPayload, this.data.cardId).subscribe(
         {
           next: (response) => {
