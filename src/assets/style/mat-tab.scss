@@ -1,0 +1,40 @@
+.tab-component{
+  .mat-tab-body-wrapper{
+    background-color: #FAFAFA;
+    border-radius: 4px;
+  }
+
+  .mat-tab-body-content{
+    overflow: hidden;
+  }
+
+  .mat-tab-label {
+    height: 46px;
+    padding: 0 16px;
+    min-width: auto;
+    opacity: 1;
+
+    .mat-tab-label-content {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22.4px;
+      letter-spacing: 1.25px;
+      color: #212121de;
+    }
+  }
+
+  .mat-tab-label-active{
+    .mat-tab-label-content {
+      color: #141b4d;
+    }
+  }
+
+  .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background: #141b4d;
+  }
+
+  .md-ripple-container:active{
+    background-color: none;
+}
+}
