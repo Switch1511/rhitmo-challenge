@@ -1,1 +1,16 @@
-<p>sidebar works!</p>
+<div id="sidebar">
+  <div class="brand-wrapper">
+    <img src="assets/images/brand.png" alt="">
+  </div>
+
+  <nav class="menu-list">
+    <ul>
+      <li *ngFor="let item of navigationItens" >
+        <a class="sidebar-icons" (click)="redirectTo(item.route)">
+          <mat-icon>{{ item.icon }}</mat-icon>
+          {{ item.name }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
