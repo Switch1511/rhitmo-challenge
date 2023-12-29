@@ -9,6 +9,8 @@ import { TenanciesHeaderComponent } from './components/tenancies-header/tenancie
 import { UnityCardsComponent } from './components/unity-cards/unity-cards.component';
 import { UnityContentComponent } from './components/unity-content/unity-content.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogCreateUnityModule } from '../../shared/dialogs/dialog-create-unity/dialog-create-unity.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MatIconModule } from '@angular/material/icon';
     BreadcrumbModule,
     MatTabsModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule,
+    DialogCreateUnityModule
   ],
   exports: [
     TenanciesComponent

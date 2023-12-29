@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardsComponent } from './cards.component';
+import { DialogDeleteUnityComponent } from './dialog-delete-unity.component';
 
 
 
 @NgModule({
   declarations: [
-    CardsComponent
+    DialogDeleteUnityComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    CardsComponent
+    DialogDeleteUnityComponent
   ]
 })
-export class CardsModule { }
+export class DialogDeleteUnityModule { }

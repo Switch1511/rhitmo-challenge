@@ -1,0 +1,27 @@
+.menu-list{
+  .mat-expansion-panel {
+    background-color: #0B1034;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .mat-expansion-panel-header{
+    padding: 0 15px 0 16px;
+  }
+
+  .mat-expansion-panel-body{
+    padding: 0;
+  }
+
+  .mat-expansion-panel-header-title {
+    color: #FAFAFA;
+  }
+
+  .mat-expansion-panel-header-description, .mat-expansion-indicator::after {
+    color: #FAFAFA;
+  }
+
+  .mat-expansion-panel-header-title, .mat-expansion-panel-header-description{
+    display: block;
+  }
+}

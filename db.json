@@ -1,1 +1,22 @@
-{}
+{
+  "adress": [
+    {
+      "name": "Gustavo Pasqualli",
+      "address": "132123",
+      "city": "Pinhais",
+      "state": "PR",
+      "postalCode": "83330-080",
+      "isFavorite": false,
+      "id": 1
+    },
+    {
+      "name": "324324",
+      "address": "123",
+      "city": "123123",
+      "state": "123213",
+      "postalCode": "123123",
+      "isFavorite": true,
+      "id": 2
+    }
+  ]
+}

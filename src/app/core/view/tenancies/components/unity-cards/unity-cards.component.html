@@ -1,22 +1,26 @@
 <div class="container">
-  <section *ngFor="let card of cardList">
+  <section *ngFor="let card of cardList; let i = index">
     <mat-card>
       <div>
         <mat-card-header>
-          <mat-card-title>Actions Buttons</mat-card-title>
+          <mat-card-title>
+            {{card.name}}
+            <mat-icon class="star" *ngIf="card.isFavorite">star</mat-icon>
+          </mat-card-title>
         </mat-card-header>
-        <p>
-          Rua Candelaro Machado, 13, Prédio 2, bairro Santa Lúcia
-        </p>
-        <p>Belo Horizonte / MG</p>
-        <p>CEP 31258-060</p>
+        <div class="attatchment">
+          <p class="attatchment address">{{card.address}}</p>
+          <p class="attatchment city-state">{{card.city + '/' + card.state}}</p>
+          <p class="attatchment postal-code">CEP {{card.postalCode}}</p>
+        </div>
+
       </div>
       <footer>
-        <button class="btn-edit">
+        <button class="btn-edit" (click)="card.id !== undefined ? openEditDialog(card.id) : null">
           <mat-icon>edit</mat-icon>
           <p>EDITAR</p>
         </button>
-        <button class="btn-delete">
+        <button class="btn-delete" (click)="card.id !== undefined ? deleteCard(card.id) : null">
           <mat-icon>delete</mat-icon>
           <p>EXCLUIR</p>
         </button>

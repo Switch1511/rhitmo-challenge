@@ -6,12 +6,31 @@
 
     <nav class="menu-list">
       <ul>
-        <li *ngFor="let item of navigationItens" (click)="redirectTo(item.route)">
-          <a class="sidebar-icons">
-            <mat-icon>{{ item.icon }}</mat-icon>
-            {{ item.name }}
-          </a>
-        </li>
+        <ng-container *ngFor="let item of navigationItens; let last = last">
+          <li *ngIf="!item.children; else subMenu" (click)="redirectTo(item.route)" [ngClass]="{'last-item': last}">
+            <a class="sidebar-icons">
+              <mat-icon>{{ item.icon }}</mat-icon>
+              {{ item.name }}
+            </a>
+          </li>
+
+          <ng-template #subMenu>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>{{ item.name }}</mat-panel-title>
+              </mat-expansion-panel-header>
+              <ul>
+                <li *ngFor="let subitem of item.children" (click)="redirectTo(subitem.route)">
+                  <a class="sidebar-icons">
+                    <mat-icon>{{ subitem.icon }}</mat-icon>
+                    {{ subitem.name }}
+                  </a>
+                </li>
+              </ul>
+
+            </mat-expansion-panel>
+          </ng-template>
+        </ng-container>
       </ul>
     </nav>
   </div>

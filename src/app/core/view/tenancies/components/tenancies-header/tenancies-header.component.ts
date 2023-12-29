@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tenancies-header',
@@ -11,7 +11,8 @@ export class TenanciesHeaderComponent implements OnInit {
   routes: any[] = [];
 
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {
     this.route.pathFromRoot.forEach(path => {
       const breadcrumb = path.routeConfig?.data?.['breadcrumb']
@@ -20,7 +21,10 @@ export class TenanciesHeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
-
+  redirectToHome(): void {
+    this.router.navigate(['/']);
+  }
 }

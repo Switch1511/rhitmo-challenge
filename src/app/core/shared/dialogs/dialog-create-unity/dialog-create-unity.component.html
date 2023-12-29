@@ -1,0 +1,52 @@
+<div class="container">
+  <form [formGroup]="form" class="form-field">
+
+    <header class="checkbox">
+      <h2>Criar Unidade</h2>
+      <mat-checkbox formControlName="isFavorite">
+        Favoritar
+      </mat-checkbox>
+    </header>
+
+    <mat-form-field appearance="fill">
+        <label>Nome da Unidade*</label>
+        <input required matInput formControlName="name" maxlength="30">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <label>CEP*</label>
+        <input required matInput formControlName="cep">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <label>Estado*</label>
+        <input required matInput formControlName="state" maxlength="30">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <label>Cidade*</label>
+        <input required matInput formControlName="city" maxlength="30">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <label>Endereço*</label>
+        <input required matInput formControlName="address" maxlength="40">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <label>Número*</label>
+        <input required matInput formControlName="number" pattern="[0-9]*" inputmode="numeric">
+    </mat-form-field>
+
+    <footer>
+      <button class="btn-cancel" (click)="closeDialog()">
+        <p>CANCELAR</p>
+      </button>
+      <button class="btn-register" (click)="saveDialog()">
+        <p *ngIf="!this.data">CRIAR</p>
+        <p *ngIf="this.data">EDITAR</p>
+      </button>
+    </footer>
+
+  </form>
+</div>
