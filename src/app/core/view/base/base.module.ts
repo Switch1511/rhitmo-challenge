@@ -7,8 +7,7 @@ import { BaseComponent } from './base.component';
 import {
   SidebarModule,
   BreadcumbModule,
-  CardsModule,
-  TabsModule
+  CardsModule
 } from '../../shared/components';
 
 @NgModule({
@@ -20,7 +19,6 @@ import {
     SidebarModule,
     BreadcumbModule,
     CardsModule,
-    TabsModule
   ],
   exports: [
     BaseComponent

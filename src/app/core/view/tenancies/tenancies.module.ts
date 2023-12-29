@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TenanciesComponent } from './tenancies.component';
 import { TenanciesRoutingModule } from './tenancies.routing.module';
 import { BreadcumbModule } from '../../shared/components';
-import { TabsModule } from '../../shared/components';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { TabsModule } from '../../shared/components';
     CommonModule,
     TenanciesRoutingModule,
     BreadcumbModule,
-    TabsModule
+    MatTabsModule
   ],
   exports: [
     TenanciesComponent
