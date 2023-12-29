@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'tenancies',
+    path: 'Tenancies',
     loadChildren: () => import('./core/view/tenancies/tenancies.module').then(m => m.TenanciesModule),
-    data: { breadcrumb: 'Tanancies'}
+    data: { title: 'Tenancies', breadcrumb: 'Pulsus'}
   }
 ];
 

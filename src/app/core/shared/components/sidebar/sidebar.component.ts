@@ -28,7 +28,7 @@ export class SidebarComponent implements OnInit {
       },
       {
         name: "Tenancies",
-        route: "/tenancies",
+        route: "/Tenancies",
         icon: "domain"
       },
       {

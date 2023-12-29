@@ -1,0 +1,36 @@
+#tenancies-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38.4px;
+    color: #212121de;
+    margin: 0;
+  }
+
+  button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #21212129;
+    cursor: pointer;
+    padding: 12px 16px;
+
+    p{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22.4px;
+      letter-spacing: 1.25px;
+      color: rgba(20, 27, 77, 1);
+      margin: 0;
+    }
+  }
+}

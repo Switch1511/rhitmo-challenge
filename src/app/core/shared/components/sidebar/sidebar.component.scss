@@ -1,31 +1,35 @@
 #sidebar{
   width: 206px;
-  height: 100vh;
-  background-color: #0B1034;
 
-  .brand-wrapper{
-    text-align: center;
-    padding: 40px 0;
-  }
+  .container{
+    position: fixed;
+    height: 100vh;
+    background-color: #0B1034;
 
-  .menu-list{
-    li{
-      padding: 12px 15px 12px 16px;
-      cursor: pointer;
+    .brand-wrapper{
+      text-align: center;
+      padding: 40px 0;
+    }
 
-      a{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16.41px;
-        color: #FAFAFA;
-        display: flex;
-        gap: 12px;
-        align-items: center;
-      }
+    .menu-list{
+      li{
+        padding: 12px 15px 12px 16px;
+        cursor: pointer;
 
-      &:hover{
-        background-color: #FAFAFA29;
+        a{
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16.41px;
+          color: #FAFAFA;
+          display: flex;
+          gap: 12px;
+          align-items: center;
+        }
+
+        &:hover{
+          background-color: #FAFAFA29;
+        }
       }
     }
   }

@@ -1,16 +1,18 @@
 <div id="sidebar">
-  <div class="brand-wrapper">
-    <img src="assets/images/brand.png" alt="">
-  </div>
+  <div class="container">
+    <div class="brand-wrapper">
+      <img src="assets/images/brand.png" alt="">
+    </div>
 
-  <nav class="menu-list">
-    <ul>
-      <li *ngFor="let item of navigationItens" (click)="redirectTo(item.route)">
-        <a class="sidebar-icons">
-          <mat-icon>{{ item.icon }}</mat-icon>
-          {{ item.name }}
-        </a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="menu-list">
+      <ul>
+        <li *ngFor="let item of navigationItens" (click)="redirectTo(item.route)">
+          <a class="sidebar-icons">
+            <mat-icon>{{ item.icon }}</mat-icon>
+            {{ item.name }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>

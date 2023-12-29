@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tenancies-header',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TenanciesHeaderComponent implements OnInit {
 
-  constructor() { }
+  routes: any[] = [];
+
+  constructor(
+    private route: ActivatedRoute
+  ) {
+    this.route.pathFromRoot.forEach(path => {
+      const breadcrumb = path.routeConfig?.data?.['breadcrumb']
+      if (!!breadcrumb) this.routes.push(breadcrumb)
+    })
+  }
 
   ngOnInit(): void {
   }
+
 
 }

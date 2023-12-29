@@ -1,5 +1,10 @@
-.tab-component{
-  section{
-    padding: 24px;
+.container{
+ .tab-component{
+    section{
+      display: flex;
+      flex-flow: column;
+      gap: 20px;
+      padding: 24px;
+    }
   }
 }

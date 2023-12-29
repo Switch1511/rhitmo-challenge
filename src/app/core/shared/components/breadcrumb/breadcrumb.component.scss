@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  gap: 8px;
+
+  a, span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.2px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+  }
+
+  .title {
+    color: #0086d6;
+  }
+
+  .breadcrumb{
+    color: #212121de;
+  }
+}

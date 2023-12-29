@@ -9,5 +9,48 @@
     @media(max-width: 1140px) {
       flex: 100%;
     }
+
+    p{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: 0.5px;
+      color: #212121de;
+      margin: 0;
+    }
+
+    footer{
+      display: flex;
+      justify-content: space-between;
+
+      button{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 13px 12px;
+      }
+
+      .btn-edit, .btn-delete{
+        p{
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22.4px;
+          letter-spacing: 1.25px;
+        }
+      }
+
+      .btn-edit > *{
+        color: rgba(0, 134, 214, 1);
+      }
+
+      .btn-delete > *{
+        color: rgba(203, 72, 72, 1);
+      }
+    }
   }
 }
