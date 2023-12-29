@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { sidebarItens } from '../../constants/sidebarItens';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,70 +9,14 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent implements OnInit {
 
-  navigationItens: any;
+  navigationItens: any = sidebarItens;
 
   constructor(
     private router: Router
   ) { }
 
   ngOnInit(): void {
-    this.navigationItens = [
-      {
-        name: "Home",
-        route: "",
-        icon: "home"
-      },
-      {
-        name: "Usuários",
-        route: "",
-        icon: "person"
-      },
-      {
-        name: "Tenancies",
-        route: "/Tenancies",
-        icon: "domain"
-      },
-      {
-        name: "Planos de saúde",
-        route: "",
-        icon: "emergency"
-      },
-      {
-        name: "Comorbidades",
-        route: "",
-        icon: "sick"
-      },
-      {
-        name: "Condições do paciente",
-        route: "",
-        icon: "personal_injury"
-      },
-      {
-        name: "Elegibilidade",
-        route: "",
-        icon: "list"
-      },
-      {
-        name: "Especialidades",
-        route: "",
-        icon: "medical_information"
-      },
-      {
-        name: "Patologias",
-        route: "",
-        icon: "healing"
-      },
-      {
-        name: "Medicamentos",
-        route: "",
-        icon: "medication"
-      },
-      {
-        name: "Sair",
-        route: "",
-        icon: "logout"
-      },
-    ]
+    console.log(this.navigationItens)
   }
 
   redirectTo(url: string): void {
