@@ -5,8 +5,8 @@
 
   <nav class="menu-list">
     <ul>
-      <li *ngFor="let item of navigationItens" >
-        <a class="sidebar-icons" (click)="redirectTo(item.route)">
+      <li *ngFor="let item of navigationItens" (click)="redirectTo(item.route)">
+        <a class="sidebar-icons">
           <mat-icon>{{ item.icon }}</mat-icon>
           {{ item.name }}
         </a>

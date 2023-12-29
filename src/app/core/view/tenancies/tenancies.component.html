@@ -1,12 +1,18 @@
 <div class="container">
-  <app-breadcumb></app-breadcumb>
+  <header>
+    <app-breadcumb></app-breadcumb>
+    <app-tenancies-header></app-tenancies-header>
+  </header>
   <div class="tab-component">
     <mat-tab-group>
       <mat-tab label="GERAL">
         <section>Content 1</section>
       </mat-tab>
       <mat-tab label="UNIDADES">
-        <section>Content 1</section>
+        <section>
+          <app-unity-content></app-unity-content>
+          <app-unity-cards></app-unity-cards>
+        </section>
       </mat-tab>
       <mat-tab label="USUÁRIOS">
         <section>Content 1</section>
