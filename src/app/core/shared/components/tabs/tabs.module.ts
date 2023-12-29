@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TabsComponent } from './tabs.component';
-
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -9,7 +9,8 @@ import { TabsComponent } from './tabs.component';
     TabsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatTabsModule
   ],
   exports: [
     TabsComponent

@@ -9,7 +9,7 @@ import {
   BreadcumbModule,
   CardsModule,
   TabsModule
-} from '../components';
+} from '../../shared/components';
 
 @NgModule({
   declarations: [
